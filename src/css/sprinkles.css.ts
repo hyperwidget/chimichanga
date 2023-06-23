@@ -30,6 +30,14 @@ const responsiveAtomicProps = defineProperties({
   },
   defaultCondition: "default",
   responsiveArray: ["sm", "md", "lg"],
+  shorthands: {
+    padding: ["paddingTop", "paddingBottom", "paddingLeft", "paddingRight"],
+    paddingX: ["paddingLeft", "paddingRight"],
+    paddingY: ["paddingTop", "paddingBottom"],
+    margin: ["marginTop", "marginBottom", "marginLeft", "marginRight"],
+    marginX: ["marginLeft", "marginRight"],
+    marginY: ["marginTop", "marginBottom"],
+  },
 });
 
 export type ResponsiveAtomicProps<Value extends string | number> =

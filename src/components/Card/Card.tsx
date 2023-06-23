@@ -11,7 +11,7 @@ const validElements = [
   "section",
 ] as const;
 
-interface Props {
+interface CardProps {
   children: BoxProps["children"];
   as?: (typeof validElements)[number];
   color?: "normal" | "highlight";
@@ -26,7 +26,7 @@ export function Card({
   elevation = "medium",
   fullWidth,
   ...props
-}: Props) {
+}: CardProps) {
   return (
     <Box
       as={as}
@@ -34,6 +34,7 @@ export function Card({
       padding="4x"
       width={fullWidth ? "full" : undefined}
       boxShadow={elevation}
+      background={color === "normal" ? "primary" : "highlight"}
       {...props}
     />
   );

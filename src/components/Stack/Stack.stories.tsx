@@ -10,7 +10,9 @@ export default {
 
 export const Primary = () => (
   <Stack>
-    <Card>Card 1</Card>
-    <Card>Card 2</Card>
+    <Card elevation="high">Card 1</Card>
+    <Card elevation="low" color="highlight">
+      Highlight card
+    </Card>
   </Stack>
 );
