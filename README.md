@@ -8,6 +8,8 @@ This setup borrows heavily from a few different resources to get going:
 - A couple of component and theme values from [this project](https://github.com/timoclsn/mauli-vanilla-extract)
 - An experimental version of [Shopify's Polaris library](https://github.com/Shopify/foundational-design-system-proto/tree/main)
 
+This project auto-builds and deploys the storybook instance - you can check it out [here](https://hyperwidget.github.io/chimichanga/)
+
 # Original Readme from scaffold below
 
 <p align="center">
