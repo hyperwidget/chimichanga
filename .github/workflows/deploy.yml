@@ -17,6 +17,9 @@ jobs:
         with:
           version: latest
 
+      - name: Install deps
+        run: pnpm install
+
       - name: Build Storybook
         run: pnpm run build-storybook
 
