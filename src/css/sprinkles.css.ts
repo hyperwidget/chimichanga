@@ -18,8 +18,8 @@ const responsiveAtomicProps = defineProperties({
   properties: responsiveProperties,
   conditions: {
     sm: {},
-    md: { "@media": `screen and ...` },
-    lg: { "@media": `screen and ...` },
+    md: { "@media": `screen and (max-width: 768px)` },
+    lg: { "@media": `screen and (max-width: 992px)` },
   },
   defaultCondition: "sm",
   responsiveArray: ["sm", "md", "lg"],
