@@ -1,3 +1,15 @@
+This is a bit of a hack project to experiment with a setup for a component library that builds off of vanilla extract.
+
+This isn't intended to be used for any projects, but is more for learning how all these pieces fit together as well as to experience vanilla-extract beyond the basic scaffolding.
+
+This setup borrows heavily from a few different resources to get going:
+
+- [This blog post](https://sandroroth.com/blog/vanilla-extract-approach) by Sandro Roth that helps to define themes and prop helpers as well as typing
+- A couple of component and theme values from [this project](https://github.com/timoclsn/mauli-vanilla-extract)
+- An experimental version of [Shopify's Polaris library](https://github.com/Shopify/foundational-design-system-proto/tree/main)
+
+# Original Readme from scaffold below
+
 <p align="center">
   <a href="https://www.chromatic.com/">
     <img alt="Chromatic" src="https://avatars2.githubusercontent.com/u/24584319?s=200&v=4" width="60" />
