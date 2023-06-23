@@ -14,5 +14,8 @@ export const Primary = () => (
     <Card elevation="low" color="highlight">
       Highlight card
     </Card>
+    <Card elevation="medium" color="normal" as="main">
+      This is our fancy card
+    </Card>
   </Stack>
 );

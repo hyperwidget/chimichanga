@@ -1,18 +1,15 @@
 {
-  "name": "intro-storybook-react-template",
-  "version": "0.2.0",
-  "description": "Starter template to get up and running quickly with React and Storybook",
-  "author": "Chromatic <https://chromatic.com/>",
+  "name": "chimichanga-components",
+  "version": "0.0.0",
+  "description": "Experiments with vanilla-extract and component libraries",
+  "author": "hyperwidget",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chromaui/intro-storybook-react-template"
-  },
-  "bugs": {
-    "url": "https://github.com/chromaui/intro-storybook-react-template/issues"
+    "url": "https://github.com/hyperwidget/chimichanga/"
   },
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@capsizecss/metrics": "^1.2.0",
     "@capsizecss/vanilla-extract": "^1.0.0",
@@ -40,6 +37,7 @@
     "@storybook/react": "^7.0.6",
     "@storybook/react-vite": "^7.0.6",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@types/node": "^20.3.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vanilla-extract/vite-plugin": "^3.8.2",
@@ -49,6 +47,20 @@
     "prop-types": "^15.8.1",
     "storybook": "^7.0.6",
     "typescript": "^5.1.3",
-    "vite": "^4.2.0"
-  }
+    "vite": "^4.2.0",
+    "vite-plugin-dts": "^2.3.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/chimichanga-components.es.js",
+      "require": "./dist/chimichanga-components.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "main": "./dist/chimichanga-components.umd.js",
+  "module": "./dist/chimichanga-components.es.js",
+  "types": "./dist/index.d.ts"
 }
