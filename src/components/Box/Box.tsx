@@ -1,6 +1,7 @@
 import { forwardRef } from "react";
-import clsx, { ClassValue } from "clsx";
+import { ClassValue } from "clsx";
 import { extractAtoms, atoms, type Atoms } from "../../css/atoms";
+import { type Sprinkles } from "../../css/sprinkles.css";
 import React from "react";
 
 type HTMLProperties = Omit<
@@ -8,7 +9,7 @@ type HTMLProperties = Omit<
   "as" | "className" | "color" | "height" | "width"
 >;
 
-type BoxProps = Atoms &
+export type BoxProps = Atoms &
   HTMLProperties & {
     as?: React.ElementType;
     className?: ClassValue;

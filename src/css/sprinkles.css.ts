@@ -1,4 +1,10 @@
-import { defineProperties, createSprinkles } from "@vanilla-extract/sprinkles";
+import {
+  defineProperties,
+  createSprinkles,
+  createMapValueFn,
+  type ConditionalValue,
+} from "@vanilla-extract/sprinkles";
+
 import { unresponsiveProps, responsiveProperties, colorProps } from "./props";
 
 const unresponsiveAtomicProps = defineProperties({
@@ -17,13 +23,19 @@ const colorAtomicProps = defineProperties({
 const responsiveAtomicProps = defineProperties({
   properties: responsiveProperties,
   conditions: {
+    default: {},
     sm: {},
     md: { "@media": `screen and (max-width: 768px)` },
     lg: { "@media": `screen and (max-width: 992px)` },
   },
-  defaultCondition: "sm",
+  defaultCondition: "default",
   responsiveArray: ["sm", "md", "lg"],
 });
+
+export type ResponsiveAtomicProps<Value extends string | number> =
+  ConditionalValue<typeof responsiveAtomicProps, Value>;
+
+export const mapResponsiveAtomicProps = createMapValueFn(responsiveAtomicProps);
 
 export const sprinkles = createSprinkles(
   unresponsiveAtomicProps,
