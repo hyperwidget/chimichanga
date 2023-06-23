@@ -29,5 +29,5 @@ export interface StackProps {
     reverse?: boolean;
     className?: BoxProps["className"];
 }
-export declare function Stack({ as, direction, space, align, justify, wrap, reverse, ...props }: StackProps): JSX.Element;
+export declare function Stack({ as, direction, space, align, justify, wrap, reverse, ...props }: StackProps): import("react/jsx-runtime").JSX.Element;
 export {};

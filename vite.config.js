@@ -6,11 +6,18 @@ import dts from "vite-plugin-dts";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [dts(), react(), vanillaExtractPlugin()],
+  plugins: [
+    dts({
+      insertTypesEntry: true,
+    }),
+    react(),
+    vanillaExtractPlugin(),
+  ],
   build: {
     lib: {
-      entry: resolve("src/index.js"),
+      entry: resolve(__dirname, "src/index.ts"),
       name: "Chimichanga Components",
+      formats: ["es", "umd"],
       fileName: (format) => `chimichanga-components.${format}.js`,
     },
   },

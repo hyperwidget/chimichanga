@@ -8,5 +8,5 @@ interface CardProps {
     fullWidth?: boolean;
     className?: BoxProps["className"];
 }
-export declare function Card({ as, color, elevation, fullWidth, ...props }: CardProps): JSX.Element;
+export declare function Card({ as, color, elevation, fullWidth, ...props }: CardProps): import("react/jsx-runtime").JSX.Element;
 export {};

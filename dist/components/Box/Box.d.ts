@@ -6,5 +6,8 @@ export type BoxProps = Atoms & HTMLProperties & {
     as?: React.ElementType;
     className?: ClassValue;
 };
-export declare const Box: import("react").ForwardRefExoticComponent<Omit<BoxProps, "ref"> & import("react").RefAttributes<HTMLElement>>;
+export declare const Box: React.ForwardRefExoticComponent<Atoms & HTMLProperties & {
+    as?: React.ElementType;
+    className?: ClassValue;
+} & React.RefAttributes<HTMLElement>>;
 export {};

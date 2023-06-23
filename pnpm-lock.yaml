@@ -28,7 +28,7 @@ specifiers:
   storybook: ^7.0.6
   typescript: ^5.1.3
   vite: ^4.2.0
-  vite-plugin-dts: ^2.3.0
+  vite-plugin-dts: ^1.7.3
 
 dependencies:
   '@capsizecss/metrics': 1.2.0
@@ -60,7 +60,7 @@ devDependencies:
   storybook: 7.0.23
   typescript: 5.1.3
   vite: 4.3.9_@types+node@20.3.1
-  vite-plugin-dts: 2.3.0_vqhptmhxbuuzlvuapmqmohjqs4
+  vite-plugin-dts: 1.7.3_vqhptmhxbuuzlvuapmqmohjqs4
 
 packages:
 
@@ -4115,12 +4115,12 @@ packages:
       '@testing-library/dom': 8.20.1
     dev: true
 
-  /@ts-morph/common/0.19.0:
-    resolution: {integrity: sha512-Unz/WHmd4pGax91rdIKWi51wnVUW11QttMEPpBiBgIewnc9UQIX7UDLxr5vRlqeByXCwhkF6VabSsI0raWcyAQ==}
+  /@ts-morph/common/0.18.1:
+    resolution: {integrity: sha512-RVE+zSRICWRsfrkAw5qCAK+4ZH9kwEFv5h0+/YeHTLieWP7F4wWq4JsKFuNWG+fYh/KF+8rAtgdj5zb2mm+DVA==}
     dependencies:
       fast-glob: 3.2.12
-      minimatch: 7.4.6
-      mkdirp: 2.1.6
+      minimatch: 5.1.6
+      mkdirp: 1.0.4
       path-browserify: 1.0.1
     dev: true
 
@@ -5143,8 +5143,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /code-block-writer/12.0.0:
-    resolution: {integrity: sha512-q4dMFMlXtKR3XNBHyMHt/3pwYNA69EDk00lloMOaaUMKPUXBw6lpXtbu3MMVG6/uOihGnRDOlkyqsONEUj60+w==}
+  /code-block-writer/11.0.3:
+    resolution: {integrity: sha512-NiujjUFB4SwScJq2bwbYUtXbZhBSlY6vYzm++3Q6oC+U+injTqfPYFK8wS9COOmb2lueqp0ZRB4nK1VYeHgNyw==}
     dev: true
 
   /color-convert/1.9.3:
@@ -7057,13 +7057,6 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /magic-string/0.29.0:
-    resolution: {integrity: sha512-WcfidHrDjMY+eLjlU+8OvwREqHwpgCeKVBUpQ3OhYYuvfaYCUgcbuBzappNzZvg/v8onU3oQj+BYpkOJe9Iw4Q==}
-    engines: {node: '>=12'}
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.15
-    dev: true
-
   /make-dir/2.1.0:
     resolution: {integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==}
     engines: {node: '>=6'}
@@ -7197,13 +7190,6 @@ packages:
       brace-expansion: 2.0.1
     dev: true
 
-  /minimatch/7.4.6:
-    resolution: {integrity: sha512-sBz8G/YjVniEz6lKPNpKxXwazJe4c19fEfV2GDMX6AjFz+MX9uDWIZW8XreVhkFW3fkIdTv/gxWr/Kks5FFAVw==}
-    engines: {node: '>=10'}
-    dependencies:
-      brace-expansion: 2.0.1
-    dev: true
-
   /minimist/1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: true
@@ -7241,12 +7227,6 @@ packages:
 
   /mkdirp/1.0.4:
     resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dev: true
-
-  /mkdirp/2.1.6:
-    resolution: {integrity: sha512-+hEnITedc8LAtIP9u3HJDFIdcLV2vXP33sqLLIzkv1Db1zO/1OxbvYf0Y1OC/S/Qo5dxHXepofhmxL02PsKe+A==}
     engines: {node: '>=10'}
     hasBin: true
     dev: true
@@ -8673,11 +8653,11 @@ packages:
     engines: {node: '>=6.10'}
     dev: true
 
-  /ts-morph/18.0.0:
-    resolution: {integrity: sha512-Kg5u0mk19PIIe4islUI/HWRvm9bC1lHejK4S0oh1zaZ77TMZAEmQC0sHQYiu2RgCQFZKXz1fMVi/7nOOeirznA==}
+  /ts-morph/17.0.1:
+    resolution: {integrity: sha512-10PkHyXmrtsTvZSL+cqtJLTgFXkU43Gd0JCc0Rw6GchWbqKe0Rwgt1v3ouobTZwQzF1mGhDeAlWYBMGRV7y+3g==}
     dependencies:
-      '@ts-morph/common': 0.19.0
-      code-block-writer: 12.0.0
+      '@ts-morph/common': 0.18.1
+      code-block-writer: 11.0.3
     dev: true
 
   /tslib/2.5.3:
@@ -8935,13 +8915,12 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-dts/2.3.0_vqhptmhxbuuzlvuapmqmohjqs4:
-    resolution: {integrity: sha512-WbJgGtsStgQhdm3EosYmIdTGbag5YQpZ3HXWUAPCDyoXI5qN6EY0V7NXq0lAmnv9hVQsvh0htbYcg0Or5Db9JQ==}
+  /vite-plugin-dts/1.7.3_vqhptmhxbuuzlvuapmqmohjqs4:
+    resolution: {integrity: sha512-u3t45p6fTbzUPMkwYe0ESwuUeiRMlwdPfD3dRyDKUwLe2WmEYcFyVp2o9/ke2EMrM51lQcmNWdV9eLcgjD1/ng==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: '>=2.9.0'
     dependencies:
-      '@babel/parser': 7.22.5
       '@microsoft/api-extractor': 7.36.0_@types+node@20.3.1
       '@rollup/pluginutils': 5.0.2
       '@rushstack/node-core-library': 3.59.4_@types+node@20.3.1
@@ -8949,8 +8928,7 @@ packages:
       fast-glob: 3.2.12
       fs-extra: 10.1.0
       kolorist: 1.8.0
-      magic-string: 0.29.0
-      ts-morph: 18.0.0
+      ts-morph: 17.0.1
       vite: 4.3.9_@types+node@20.3.1
     transitivePeerDependencies:
       - '@types/node'
