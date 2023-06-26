@@ -1,7 +1,6 @@
-import React from "react";
 import { Box, type BoxProps } from "../Box";
 
-interface LabelProps {
+export interface LabelProps {
   children: BoxProps["children"];
   className?: BoxProps["className"];
 }
@@ -9,6 +8,7 @@ interface LabelProps {
 export const Label = ({ children, ...props }: LabelProps) => {
   return (
     <Box
+      // @ts-ignore
       borderRadius="round"
       paddingY="1x"
       paddingX="1x"

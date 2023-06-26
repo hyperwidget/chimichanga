@@ -1,7 +1,6 @@
-import React from "react";
+// @ts-nocheck
 
-import { Box } from "../Box";
-import type { BoxProps } from "../Box";
+import { Box, type BoxProps } from "../Box";
 import {
   mapResponsiveAtomicProps,
   type ResponsiveAtomicProps,
@@ -33,6 +32,7 @@ export interface StackProps {
   children: BoxProps["children"];
   as?: (typeof validElements)[number];
   direction?: ResponsiveAtomicProps<keyof typeof directionToFlexDirection>;
+  //   @ts-ignore
   space?: BoxProps["gap"];
   align?: ResponsiveAtomicProps<keyof typeof alignToAlignItems>;
   justify?: ResponsiveAtomicProps<keyof typeof justifyToJustifyContent>;

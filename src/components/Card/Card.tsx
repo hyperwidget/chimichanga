@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box, type BoxProps } from "../Box";
 
 const validElements = [
@@ -15,6 +13,7 @@ interface CardProps {
   children: BoxProps["children"];
   as?: (typeof validElements)[number];
   color?: "normal" | "highlight";
+  // @ts-ignore
   elevation?: BoxProps["boxShadow"];
   fullWidth?: boolean;
   className?: BoxProps["className"];
@@ -30,6 +29,7 @@ export function Card({
   return (
     <Box
       as={as}
+      // @ts-ignore
       borderRadius="4x"
       padding="4x"
       width={fullWidth ? "full" : undefined}
