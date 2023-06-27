@@ -20,6 +20,7 @@ specifiers:
   '@vanilla-extract/vite-plugin': ^3.8.2
   '@vitejs/plugin-react': ^3.1.0
   clsx: ^1.2.1
+  json: ^11.0.0
   lodash: ^4.17.21
   msw: ^1.2.1
   msw-storybook-addon: ^1.8.0
@@ -42,6 +43,7 @@ dependencies:
   '@vanilla-extract/css': 1.11.1
   '@vanilla-extract/sprinkles': 1.6.0_sqr63gfwi5yqhik3spxs63sakq
   clsx: 1.2.1
+  json: 11.0.0
   lodash: 4.17.21
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -7067,6 +7069,12 @@ packages:
   /json-schema-traverse/0.4.1:
     resolution: {integrity: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==}
     dev: true
+
+  /json/11.0.0:
+    resolution: {integrity: sha512-N/ITv3Yw9Za8cGxuQqSqrq6RHnlaHWZkAFavcfpH/R52522c26EbihMxnY7A1chxfXJ4d+cEFIsyTgfi9GihrA==}
+    engines: {node: '>=0.10.0'}
+    hasBin: true
+    dev: false
 
   /json5/2.2.3:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
