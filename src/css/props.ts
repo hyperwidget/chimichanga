@@ -1,4 +1,4 @@
-import { vars } from "./theme.css";
+import { vars } from "./theme.css.js";
 
 export const unresponsiveProps = {
   minBlockSize: ["100vh"],

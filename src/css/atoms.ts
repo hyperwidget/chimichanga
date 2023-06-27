@@ -1,5 +1,5 @@
-import { baseReset, elementResets } from "./reset.css";
-import { sprinkles, Sprinkles } from "./sprinkles.css";
+import { baseReset, elementResets } from "./reset.css.js";
+import { sprinkles, Sprinkles } from "./sprinkles.css.js";
 import { pick, omit } from "lodash";
 import clsx from "clsx";
 

@@ -5,7 +5,11 @@ import {
   type ConditionalValue,
 } from "@vanilla-extract/sprinkles";
 
-import { unresponsiveProps, responsiveProperties, colorProps } from "./props";
+import {
+  unresponsiveProps,
+  responsiveProperties,
+  colorProps,
+} from "./props.js";
 
 const unresponsiveAtomicProps = defineProperties({
   properties: unresponsiveProps,

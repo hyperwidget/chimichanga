@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import { ClassValue } from "clsx";
-import { extractAtoms, atoms, type Atoms } from "../../css/atoms";
+import { extractAtoms, atoms, type Atoms } from "../../css/atoms.js";
 
 type HTMLProperties = Omit<
   React.AllHTMLAttributes<HTMLElement>,

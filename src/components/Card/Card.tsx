@@ -9,11 +9,10 @@ const validElements = [
   "section",
 ] as const;
 
-interface CardProps {
+interface CardProps extends Omit<BoxProps, "color"> {
   children: BoxProps["children"];
   as?: (typeof validElements)[number];
   color?: "normal" | "highlight";
-  // @ts-ignore
   elevation?: BoxProps["boxShadow"];
   fullWidth?: boolean;
   className?: BoxProps["className"];
